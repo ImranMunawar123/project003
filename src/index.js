@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PlainFunction from "./plainFunction";
+import ArrowFunction from "./arrowFunction";
+import MediaCard from "./mediaCard";
+import Gate from "./gate";
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const Assignments = () => {
+    return (
+    <div className="assignmentDiv">
+        <PlainFunction firstName="Imran" lastName="Munawar"/>
+        <ArrowFunction firstName="Imran" lastName="Munawar"/>
+        <MediaCard title="Profile Picture" body="This is the body of the Media Card" imageUrl="https://picsum.photos/seed/picsum/250/130"/>
+        <Gate isOpen={false}/>
+    </div>
+    )
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<Assignments/>, document.querySelector('#root'));

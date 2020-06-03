@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.assignmentDiv{
+  text-align: center;
+  border: 2px solid black;
+  padding: 10px;
+}
