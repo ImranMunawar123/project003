@@ -5,7 +5,7 @@ const MediaCard = ({title,body,imageUrl}) => (
     <h4 style={{textDecoration: "underline"}}>Media Card Task :</h4>
     <h5 style={{color:"Purple"}}>{title}</h5>
     <p>{body}</p>
-    <img src= {imageUrl} alt="Media Image"/>
+    <img src= {imageUrl} alt="Scenery"/>
   </div>
 );
 
