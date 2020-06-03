@@ -3,9 +3,9 @@ import React from 'react';
 // Gate Assignment
 
 const Gate = ({isOpen}) => (
-    <div style={{border: "2px solid #4c4c4c", marginTop: "15px"}}>
-        <h5>Gate Task :</h5> 
-        The Gate is <strong>{isOpen == true ? "Open" : "Closed"}</strong>
+    <div style={{marginTop: "10px",marginBottom: "20px"}}>
+        <h4 style={{textDecoration: "underline"}}>Gate Task :</h4>
+        The Gate is <strong style={{color: "darkgreen"}}>{isOpen == true ? "Open" : "Closed"}</strong>
     </div>
     );
 
